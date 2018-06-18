@@ -17,7 +17,7 @@ pipeline {
                 echo 'Deploying....  This is the deployment phase'
             }
         }
-	stage('Postdeploy')
+	stage('Postdeploy') {
 		steps {
 			echo 'Postdeployment phase....'
 		}
