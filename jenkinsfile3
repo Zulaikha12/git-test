@@ -1,0 +1,27 @@
+pipeline {
+
+    agent {
+            docker {
+                label 'agent01'
+                image 'hello-world'
+            }
+
+
+    }
+
+    stages {
+
+        stage('Compile') {
+
+            steps {
+                sh 'whoami'
+                sh 'echo $PATH'
+
+            }
+
+        }
+
+
+    }
+
+}
