@@ -2,7 +2,6 @@ pipeline {
 
     agent {
             docker {
-                label 'agent01'
                 image 'hello-world'
             }
 
