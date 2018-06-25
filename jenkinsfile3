@@ -14,6 +14,7 @@ pipeline {
 
             steps {
                 sh 'ls'
+                sh 'pwd'
                 sh 'df'
                 sh 'echo $PATH'
 
