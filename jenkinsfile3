@@ -13,7 +13,7 @@ pipeline {
         stage('Compile') {
 
             steps {
-                sh 'time'
+                sh 'echo time'
                 sh 'echo $PATH'
 
             }
