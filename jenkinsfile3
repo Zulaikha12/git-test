@@ -13,7 +13,6 @@ pipeline {
         stage('Compile') {
 
             steps {
-                sh 'cd /home/edureka'
                 sh 'java /home/edureka/AddTwoNumbers2.java'
                 sh 'ls'
                 sh 'pwd'
