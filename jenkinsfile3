@@ -16,6 +16,7 @@ pipeline {
                 sh 'ls'
                 sh 'pwd'
                 sh 'df'
+                sh 'time'
                 sh 'echo $PATH'
 
             }
