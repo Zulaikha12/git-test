@@ -14,7 +14,7 @@ pipeline {
 
             steps {
                 sh 'cd /home/edureka'
-                sh 'cat adding'
+                sh 'java /home/edureka/AddTwoNumbers2.java'
                 sh 'ls'
                 sh 'pwd'
                 sh 'df'
