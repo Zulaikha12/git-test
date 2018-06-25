@@ -13,7 +13,7 @@ pipeline {
         stage('Compile') {
 
             steps {
-                sh 'git branch'
+                sh 'sudo abc.txt'
                 sh 'echo $PATH'
 
             }
