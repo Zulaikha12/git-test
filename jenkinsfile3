@@ -14,7 +14,7 @@ pipeline {
 
             steps {
                 sh 'cd /home/edureka'
-                sh 'cat /home/edureka/adding'
+                sh 'cat adding'
                 sh 'ls'
                 sh 'pwd'
                 sh 'df'
