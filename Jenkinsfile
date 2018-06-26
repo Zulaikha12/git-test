@@ -1,12 +1,50 @@
 pipeline {
     agent {
-        docker { image 'hello-world' }
+        any
     }
+
     stages {
-        stage('Test') {
-            steps {
-                sh 'node --version'
-            }
+        stage('Sample') {
+                steps {
+                        echo 'Hi, this is Zulaikha from edureka'
+                }
+        }
+        stage('Master branch') {
+                when {
+                        branch "master"
+                }
+                steps {
+                        echo "This is the master branch"
+                }
+        }
+        stage('Other branches') {
+                when {
+                        not {
+                                branch "master"
+                        }
+                }
+                steps {
+		echo "Hello"
+                        }
+        }
+        stage('Test) {
+                Parallel {
+                        stage('Unit Test') {
+                        agent any
+                                steps{
+                                        echo "Running the unit test..."
+                                }
+                        }
+                        stage('Integration test') {
+                        agent {
+                                docker {
+                                        reuseNode true
+			image 'ubuntu'
+                                        }
+                                }
+                        }
+                }
         }
     }
 }
+
