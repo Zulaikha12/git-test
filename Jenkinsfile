@@ -22,13 +22,12 @@ pipeline {
                         }
                 }
                 steps {
-		echo "Hello"
+			echo "Hello"
                         }
         }
         stage('Test') {
                 parallel {
                         stage('Unit Test') {
-                        agent any
                                 steps{
                                         echo "Running the unit test..."
                                 }
