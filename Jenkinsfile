@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        any
-    }
-
+    agent any
     stages {
         stage('Sample') {
                 steps {
@@ -28,7 +25,7 @@ pipeline {
                         }
         }
         stage('Test') {
-                Parallel {
+                parallel {
                         stage('Unit Test') {
                         agent any
                                 steps{
