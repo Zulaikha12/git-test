@@ -9,10 +9,11 @@ pipeline {
         stage('Master branch') {
                 when {
                         branch "master"
-                }
+                
                 steps {
                         echo "This is the master branch"
                 }
+		}
         }
         stage('Other branches') {
                 when {
