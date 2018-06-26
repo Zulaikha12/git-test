@@ -9,7 +9,6 @@ pipeline {
         stage('Master branch') {
                 when {
                         branch "master"
-			returns true
 		}
                 steps {
                         echo "This is the master branch"
