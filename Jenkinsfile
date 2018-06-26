@@ -39,6 +39,10 @@ pipeline {
 			image 'ubuntu'
                                         }
                                 }
+				steps {
+					sh "ls"
+				}
+				
                         }
                 }
         }
