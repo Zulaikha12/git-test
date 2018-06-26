@@ -27,7 +27,7 @@ pipeline {
 		echo "Hello"
                         }
         }
-        stage('Test) {
+        stage('Test') {
                 Parallel {
                         stage('Unit Test') {
                         agent any
