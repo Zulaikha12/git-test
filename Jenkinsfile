@@ -6,14 +6,14 @@ pipeline {
                         echo 'Hi, this is Zulaikha from edureka'
                 }
         }
-        stage('Master branch') {
+        stage('Sample2') {
                 when {
-                        branch "master"
-		}
-                steps {
-                        echo "This is the master branch"
+        	expression {
+		steps {
+                input('Do you want to proceed?')
                 }
-		
+		}
+		}
         }
         stage('Other branches') {
                 when {
