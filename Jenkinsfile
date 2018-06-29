@@ -6,14 +6,14 @@ pipeline {
                         echo 'Hi, this is Zulaikha from edureka'
                 }
         }
-	    stage('Sample2') {
+	    stage('User input') {
 		    
 		steps {
 		
                 input('Do you want to proceed?')
                 }
         }
-        stage('Other branches') {
+        stage('when directive') {
                 when {
                         not {
                                 branch "master"
@@ -23,7 +23,7 @@ pipeline {
 			echo "Hello"
                         }
         }
-        stage('Test') {
+        stage('parallel directive') {
                 parallel {
                         stage('Unit Test') {
                                 steps{
