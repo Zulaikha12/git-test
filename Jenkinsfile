@@ -6,11 +6,13 @@ pipeline {
                         echo 'Hi, this is Zulaikha from edureka'
                 }
         }
-	    stage('User input') {
-		    
+	    stage('User input'){
 		steps {
 		
                 input('Do you want to proceed?')
+		options {
+                timeout(time: 1, unit: 'MINUTES') 
+            }
                 }
         }
         stage('when directive') {
