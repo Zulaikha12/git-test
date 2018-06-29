@@ -10,13 +10,6 @@ pipeline {
 		    
 		steps {
 			input('Do you want to proceed?')
-			
-		options {
-			
-                timeout(time: 1, unit: 'MINUTES') 
-		
-            }
-                }
         }
         stage('when directive') {
                 when {
