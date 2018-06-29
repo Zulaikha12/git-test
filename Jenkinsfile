@@ -9,9 +9,10 @@ pipeline {
 	    stage('User input'){
 		    
 		steps {
+			input('Do you want to proceed?')
 			
 		options {
-			input('Do you want to proceed?')
+			
                 timeout(time: 1, unit: 'MINUTES') 
 		
             }
