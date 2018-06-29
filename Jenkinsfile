@@ -6,14 +6,12 @@ pipeline {
                         echo 'Hi, this is Zulaikha from edureka'
                 }
         }
-        stage('Sample2') {
-                when {
-        	expression {
+	    stage('Sample2') {
+		    
 		steps {
+		
                 input('Do you want to proceed?')
                 }
-		}
-		}
         }
         stage('Other branches') {
                 when {
