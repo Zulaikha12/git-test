@@ -11,9 +11,8 @@ pipeline {
 		steps {
 			
 		options {
-			
+			input('Do you want to proceed?')
                 timeout(time: 1, unit: 'MINUTES') 
-                input('Do you want to proceed?')
 		
             }
                 }
