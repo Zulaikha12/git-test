@@ -11,6 +11,7 @@ pipeline {
 		steps {
 			input('Do you want to proceed?')
         }
+	    }
         stage('when directive') {
                 when {
                         not {
