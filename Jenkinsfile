@@ -1,18 +1,19 @@
 pipeline {
     agent any
     stages {
-        stage('Sample') {
+        stage('One') {
                 steps {
                         echo 'Hi, this is Zulaikha from edureka'
+			
                 }
         }
-	    stage('User input'){
+	    stage('Two'){
 		    
 		steps {
 			input('Do you want to proceed?')
         }
 	    }
-        stage('when directive') {
+        stage('Three') {
                 when {
                         not {
                                 branch "master"
@@ -22,7 +23,7 @@ pipeline {
 			echo "Hello"
                         }
         }
-        stage('parallel directive') {
+        stage('Four') {
                 parallel {
                         stage('Unit Test') {
                                 steps{
