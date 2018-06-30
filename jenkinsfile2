@@ -1,12 +1,8 @@
 pipeline {
     agent {
-        docker { image 'ubuntu' }
-    }
-    stages {
-        stage('Test') {
-            steps {
-                sh 'echo hello '
-            }
+        docker {
+            image 'ubuntu'
+            label 'my-defined-label'
         }
     }
 }
