@@ -2,9 +2,8 @@ pipeline {
     agent {
         docker {
             image 'ubuntu'
-            label 'my-defined-label'
         }
-        }
+    }
         stages {
             stage('One') {
             steps {
