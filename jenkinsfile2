@@ -4,10 +4,11 @@ pipeline {
             image 'ubuntu'
             label 'my-defined-label'
         }
+        }
         stages {
             stage('One') {
             echo 'hello'
             }
             }
     }
-}
+
