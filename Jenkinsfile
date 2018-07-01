@@ -36,6 +36,9 @@ pipeline {
                                         reuseNode true
 			image 'ubuntu'
                                         }
+				steps {
+					echo 'Running thr integration test..'
+				}
                                 }
                         }
                 }
