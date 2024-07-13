@@ -2,3 +2,6 @@ a=10
 b=12
 c=a+b
 
+
+// new calc
+e = b / 2
